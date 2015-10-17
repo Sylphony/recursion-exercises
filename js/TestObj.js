@@ -138,44 +138,5 @@ define("TestObj", function() {
 		return first_val;	// The GCD
 	};
 
-
-	// Greatest common divisor (old, inefficient)
-	/*TestObj.prototype.gcd = function() {
-		var arg1 = arguments[0];
-		var arg2 = arguments[1] | 0;
-		//console.log(arg1 + " " + arg2);
-		//console.log(arguments);
-		if (!arguments[2]) {
-			return arg1;
-		}	
-
-		if (arg1 > arg2) {
-			var arr = [arg1 - arg2, arg2];
-			var remain_arr = Array.prototype.slice.call(arguments, 2);
-			for (var index = 0; index < remain_arr.length; index++) {
-				arr.push(remain_arr[index]);
-			}
-			
-			return this.gcd.apply(this, arr);
-		}
-		else if (arg1 < arg2) {
-			var arr = [arg1, arg2 - arg1];
-			var remain_arr = Array.prototype.slice.call(arguments, 2);
-			for (var index = 0; index < remain_arr.length; index++) {
-				arr.push(remain_arr[index]);
-			}
-			
-			return this.gcd.apply(this, arr);
-		}
-		else {
-			var arr = [arg1];
-			var remain_arr = Array.prototype.slice.call(arguments, 2);
-			for (var index = 0; index < remain_arr.length; index++) {
-				arr.push(remain_arr[index]);
-			}
-			return this.gcd.apply(this, arr);
-		}
-	}*/
-
 	return TestObj;
 });

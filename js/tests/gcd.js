@@ -1,4 +1,4 @@
-/* Tests for finding the range of numbers (min, max) recursively. */
+/* Tests for finding the greatest common divisor recursively. */
 
 "use strict";
 

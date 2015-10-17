@@ -2,7 +2,7 @@
 These are demo tests for the Javascript recursion exercises found on the [this webpage](http://roman01la.github.io/recursion-exercises/).
 
 ## Tests
-Tests are done with the [QUnit](https://qunitjs.com/) framework, split into modules using [RequireJS](http://requirejs.org/).
+Tests are done with the [QUnit](https://qunitjs.com/) framework, split into modules using [RequireJS](http://requirejs.org/).  Each exercise has at least 5 tests with various input to assert the results.
 
 ## Usage
 Loading up ```index.html``` will show the results of the tests done for each exercise.
@@ -25,7 +25,7 @@ Quoted from the website:
 - Decimals can sometimes lead to erroneous results, since floating point arthmetic can be imprecise.
 
 ### exponent()
-- For simplicity, exponents must be integers.
+- For simplicity, exponents must be integers. 
 
 ### fibonacci()
 - Sequence begins at the the traditional [0, 1, 1, ...].
