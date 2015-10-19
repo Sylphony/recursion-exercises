@@ -57,15 +57,15 @@ define("TestObj", function() {
 		}
 
 		// Internal function to calculate
-		var fibonacci_cal = function(num) {
-			if (num === 0) {
+		var fibonacci_cal = function(numIn) {
+			if (numIn === 0) {
 				return 0;
 			}
-			else if (num === 1 || num === 2) {
+			else if (numIn === 1 || numIn === 2) {
 				return 1;
 			}
 			else {
-				return fibonacci_cal(num-1) + fibonacci_cal(num-2);
+				return fibonacci_cal(numIn-1) + fibonacci_cal(numIn-2);
 			}
 		};
 
@@ -88,11 +88,11 @@ define("TestObj", function() {
 		}
 
 		// Internal function to execute
-		var range_find = function(min, max) {
-			if (min < max-1) {
-				min += 1;
-				arr.push(min);
-				return range_find(min, max);
+		var range_find = function(minIn, maxIn) {
+			if (minIn < maxIn-1) {
+				minIn += 1;
+				arr.push(minIn);
+				return range_find(minIn, maxIn);
 			}
 		};
 
