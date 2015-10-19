@@ -52,7 +52,7 @@ define("TestObj", function() {
 		// Array to store the sequence
 		var arr = [];
 
-		if (num % 1 !== 0 || num <= 0) {
+		if (num % 1 !== 0 || num < 0) {
 			throw new Error("fibonacci(): Sequence length must be a positive integer.");
 		}
 
