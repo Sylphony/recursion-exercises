@@ -2,7 +2,7 @@
 
 "use strict";
 
-require(["qunit", "TestObj"], function(QUnit, TestObj) {
+define(["qunit", "TestObj"], function(QUnit, TestObj) {
 	QUnit.module("fibTest", {
 		beforeEach: function() {
 			this.obj = new TestObj();
